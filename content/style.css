@@ -1,0 +1,21 @@
+﻿.footer {
+    padding: 40px;
+    background-color: #272727;
+    color: #eee;
+}
+
+.lower {
+    padding: 10px 0 5px;
+    background-color: #222;
+    color: #777;
+}
+
+.lower .copyright {
+    margin-top: 10px;
+}
+
+.lower .social-media {
+    margin-top: 12px;
+    text-align: right;
+    font-size: 16px;
+}
