@@ -27,6 +27,9 @@
     <div class="wrapper">
         <h1>Fluffy Radio</h1>
         <h3>Coming Soon</h3>
+        <audio controls="controls" autoplay="autoplay">
+            <source src="http://listen.spacial.com/api/listen/?sid=65655&method=sc&rid=1186040" />
+        </audio>
     </div>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
