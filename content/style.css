@@ -30,6 +30,21 @@ a {
     border-bottom: #ddd solid 2px;
 }
 
+    .slider h2 {
+        padding-top: 20px;
+        color: #f9f9f9;
+        font-size: 15px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+
+        .slider h2 i {
+            padding: 0 5px;
+            font-size: 36px;
+            background-color: rgba(0, 173, 238, 0.70);
+            font-style: normal;
+        }
+
 .action {
     padding: 30px 0;
     background-color: #fafafa;
@@ -46,7 +61,6 @@ a {
 
     .action .btn-listen {
         display: inline-block;
-        margin-top: 15px;
         padding: 10px 25px;
         background-color: #00adee;
         color: white;
@@ -99,3 +113,25 @@ a {
         text-align: right;
         font-size: 16px;
     }
+
+        .lower .social-media a {
+            color: #777;
+        }
+
+            .lower .social-media a:hover {
+                color: #00adee;
+            }
+
+
+            /* Spacial Widget Styles */
+            #widget_now .create_station, #widget_now .icons {
+                display: none;
+            }
+
+            #widget_now .info .title {
+                display: inline;
+            }
+
+            #widget_now .info .title:last-child {
+                display: none;
+            }
