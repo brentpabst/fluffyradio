@@ -1,21 +1,101 @@
-﻿.footer {
+﻿/* Base: 00adee */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #222;
+}
+
+a {
+    color: #00adee;
+    text-decoration: none;
+}
+
+    a:active {
+        outline: 0 !important;
+    }
+
+.header {
+    border-bottom: #eee solid 2px;
+    background-color: white;
+}
+
+.slider {
+    background: url(../images/bg.jpg) no-repeat top center;
+    height: 427px;
+    border-bottom: #ddd solid 2px;
+}
+
+.action {
+    padding: 30px 0;
+    background-color: #fafafa;
+    border-bottom: #eee solid 1px;
+    color: #666;
+}
+
+    .action span {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .action .btn-listen {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 25px;
+        background-color: #00adee;
+        color: white;
+        font-size: 18px;
+    }
+
+        .action .btn-listen:hover {
+            background-color: #0099d3;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+.content {
+    padding: 40px 15px;
+    background-color: white;
+}
+
+.footer {
     padding: 40px;
     background-color: #272727;
     color: #eee;
 }
 
+    .footer .headline {
+        margin-bottom: 25px;
+        height: 29px;
+        border-bottom: #e4e9f0 dotted 1px;
+    }
+
+        .footer .headline h2 {
+            display: inline-block;
+            margin: 0;
+            height: 30px;
+            border-bottom: #00adee solid 2px;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
 .lower {
     padding: 10px 0 5px;
-    background-color: #222;
     color: #777;
 }
 
-.lower .copyright {
-    margin-top: 10px;
-}
+    .lower .copyright {
+        margin-top: 10px;
+    }
 
-.lower .social-media {
-    margin-top: 12px;
-    text-align: right;
-    font-size: 16px;
-}
+    .lower .social-media {
+        margin-top: 12px;
+        text-align: right;
+        font-size: 16px;
+    }
