@@ -24,6 +24,10 @@ a {
     background-color: white;
 }
 
+.header .logo {
+    padding: 15px 0;
+}
+
 .slider {
     background: url(../images/bg.jpg) no-repeat top center;
     height: 427px;
