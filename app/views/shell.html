@@ -1,0 +1,98 @@
+﻿<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="/">
+                    <img class="logo" src="images/FluffyRadio.png" alt="Fluffy Radio" />
+                </a>
+            </div>
+            <div class="col-sm-8">
+                <ul class="nav nav-pills pull-right" role="navigation" data-bind="foreach: router.navigationModel">
+                    <li data-bind="css: {active: isActive, listen: isListen }">
+                        <a data-bind="attr: { href: hash }, html: title"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-bind="router: {  }"></div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 info">
+                <img class="center-block" src="images/FluffyRadio-White.png" alt="Fluffy Radio" />
+            </div>
+            <div class="col-md-3 info">
+                <div class="headline">
+                    <h2>The Latest</h2>
+                </div>
+                <p>
+                    <a class="twitter-timeline" href="https://twitter.com/search?q=%22fluffy%20radio%22" data-widget-id="547018738445606912" data-chrome="transparent noboarders nofooter noheader" data-tweet-limit="3" data-related="fluffy_radio" data-link-color="#00adee">Tweets about @fluffy_radio</a>
+                    <script type="text/javascript">
+                        !function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");
+                    </script>
+
+                </p>
+            </div>
+            <div class="col-md-3 info">
+                <div class="headline">
+                    <h2>DMCA Compliance</h2>
+                </div>
+                <p>
+                    Fluffy Radio is fully compliant with all DMCA regulations. In addition, Fluffy Radio is licensed with ASCAP, BMI, SESAC, SoundExchange, & SOCAN.
+                </p>
+            </div>
+            <div class="col-md-3 info">
+                <div class="headline">
+                    <h2>Explicit Content</h2>
+                </div>
+                <p>
+                    Some content, music, or talk could contain content that may not be suitable for all listeners. If that could bother you, please don't tune in.
+                </p>
+                <p>
+                    <img src="images/explicit.png" alt="Explicit Content" />
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lower">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="copyright">
+                    &copy; 2015 Fluffy Radio
+                    | <a href="/#/legal">Legal Stuff</a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <ul class="social-media list-inline">
+                    <li>
+                        <a href="http://www.facebook.com/fluffyradio">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com/fluffy_radio">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com/fluffy_radio">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

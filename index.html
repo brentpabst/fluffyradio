@@ -5,188 +5,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <!--<![endif]-->
 <head>
-    <title>Fluffy Radio | Pure Fluff</title>
+    <title>Fluffy Radio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Fluffy Radio">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="content/bootstrap.min.css" />
+    <link rel="stylesheet" href="content/durandal.css" />
     <link rel="stylesheet" href="content/font-awesome.min.css" />
     <link rel="stylesheet" href="content/style.css" />
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <a href="/">
-                            <img class="logo" src="images/FluffyRadio.png" alt="Fluffy Radio" />
-                        </a>
-                    </div>
-                    <div class="col-sm-8">
-                        <ul class="nav nav-pills pull-right" role="navigation">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Music</a></li>
-                            <li><a href="#">Store</a></li>
-                            <li class="listen"><a href="#"><i class="fa fa-headphones"></i>&nbsp;&nbsp;Listen Online</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h2>
-                            <i>Anything and</i>
-                            <br />
-                            <i>everything...</i>
-                            <br />
-                            <i>Pure Fluff</i>
-                        </h2>
-                        <p>
-                            <i>We've got your favorites!</i>
-                            <br />
-                            <i>If you don't hear it...</i>
-                            <br />
-                            <i>We'll add it</i>
-                        </p>
-                    </div>
-                    <div class="col-sm-6 hidden-xs">
-                        <div class="now-playing pull-right text-right">
-                            <span class="title">
-                                Currently Playing
-                            </span>
-                            <div class="playing clearfix">
-                                <div id="widgets-now-65655-b5c9927a467f053c65911e3aad02b2af5ab1c933"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="action">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <span>
-                            We've got apps for that...
-                        </span>
-                        <p>
-                            Tune in wherever you are.  We've got apps for all smartphones, tablets, and even entertainment and game consoles or go old school and launch the stream right in your web browser.
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#" class="btn-listen"><i class="fa fa-cloud-download"></i>&nbsp;&nbsp;Download Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content" style="display: none;">
-            <div class="container">
-                <audio controls="controls" src="http://listen.spacial.com/api/listen/?sid=65655&method=sc&rid=1186040"></audio>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 info">
-                        <img class="center-block" src="images/FluffyRadio-White.png" alt="Fluffy Radio" />
-                    </div>
-                    <div class="col-md-3 info">
-                        <div class="headline">
-                            <h2>The Latest</h2>
-                        </div>
-                        <p>
-                            <a class="twitter-timeline" href="https://twitter.com/search?q=%22fluffy%20radio%22" data-widget-id="547018738445606912" data-chrome="transparent noboarders nofooter noheader" data-tweet-limit="3" data-related="fluffy_radio" data-link-color="#00adee">Tweets about @fluffy_radio</a>
-                        </p>
-                    </div>
-                    <div class="col-md-3 info">
-                        <div class="headline">
-                            <h2>DMCA Compliance</h2>
-                        </div>
-                        <p>
-                            Fluffy Radio is fully compliant with all DMCA regulations.  In addition, Fluffy Radio is licensed with ASCAP, BMI, SESAC, SoundExchange, & SOCAN.
-                        </p>
-                    </div>
-                    <div class="col-md-3 info">
-                        <div class="headline">
-                            <h2>Explicit Content</h2>
-                        </div>
-                        <p>
-                            Some content, music, or talk could contain content that may not be suitable for all listeners.  If that could bother you, please don't tune in.
-                        </p>
-                        <p>
-                            <img src="images/explicit.png" alt="Explicit Content" />
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="lower">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9">
-                        <div class="copyright">
-                            &copy; 2015 Fluffy Radio
-                            | <a href="#">Legal Stuff</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <ul class="social-media list-inline">
-                            <li>
-                                <a href="http://www.facebook.com/fluffyradio">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://www.twitter.com/fluffy_radio">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://www.instagram.com/fluffy_radio">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="applicationHost"></div>
     <script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/knockout-3.1.0.js"></script>
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-    <script src="http://media.spacial.com/widgets/widget.js?env=production&his=6&queue=6&lib=20&theme=&themeType=custom"></script>
-    <script type="text/javascript">
-        !function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, "script", "twitter-wjs");
-    </script>
-    <script type="text/javascript">
-        $().ready(function () {
-            setInterval(changeSpacialText, 100);
-        });
-
-        function changeSpacialText() {
-            var artist = $("#playing65655 > div > div > div.info > p.title:nth-child(1)");
-            var track = $("#playing65655 > div > div > div.info > p.title:nth-child(2)");
-
-            var newArtist = artist.text().replace("Artist: ", "");
-            var newTrack = track.text().replace("Title: ", " - ");
-
-            artist.text(newArtist);
-            track.text(newTrack);
-        }
-    </script>
+    <script type="text/javascript" src="scripts/require.js" data-main="app/main"></script>
 </body>
 </html>
