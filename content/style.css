@@ -19,14 +19,18 @@ a {
         outline: 0 !important;
     }
 
+    a:hover {
+        text-decoration: none;
+    }
+
 .header {
     border-bottom: #eee solid 2px;
     background-color: white;
 }
 
-.header .logo {
-    padding: 15px 0;
-}
+    .header .logo {
+        padding: 15px 0;
+    }
 
 .slider {
     background: url(../images/bg.jpg) no-repeat top center;
@@ -45,7 +49,23 @@ a {
         .slider h2 i {
             padding: 0 5px;
             font-size: 36px;
+            background-color: #00adee;
             background-color: rgba(0, 173, 238, 0.70);
+            font-style: normal;
+        }
+
+    .slider p {
+        padding-top: 40px;
+        color: #f9f9f9;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+        .slider p i {
+            padding: 0 5px;
+            font-size: 20px;
+            background-color: #000;
+            background-color: rgba(0, 0, 0, 0.5);
             font-style: normal;
         }
 
@@ -58,17 +78,22 @@ a {
 
     .action span {
         display: block;
-        margin-bottom: 12px;
-        font-size: 24px;
+        margin-bottom: 25px;
+        font-size: 32px;
         line-height: 35px;
+    }
+
+    .action p {
+        margin: 0;
     }
 
     .action .btn-listen {
         display: inline-block;
-        padding: 10px 25px;
+        margin: 10px 0;
+        padding: 20px 25px;
         background-color: #00adee;
         color: white;
-        font-size: 18px;
+        font-size: 24px;
     }
 
         .action .btn-listen:hover {
@@ -87,6 +112,10 @@ a {
     background-color: #272727;
     color: #eee;
 }
+
+    .footer .info {
+        margin-bottom: 25px;
+    }
 
     .footer .headline {
         margin-bottom: 25px;
@@ -127,15 +156,15 @@ a {
             }
 
 
-            /* Spacial Widget Styles */
-            #widget_now .create_station, #widget_now .icons {
-                display: none;
-            }
+/* Spacial Widget Styles */
+#widget_now .create_station, #widget_now .icons {
+    display: none;
+}
 
-            #widget_now .info .title {
-                display: inline;
-            }
+#widget_now .info .title {
+    display: inline;
+}
 
-            #widget_now .info .title:last-child {
-                display: none;
-            }
+    #widget_now .info .title:last-child {
+        display: none;
+    }
