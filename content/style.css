@@ -75,7 +75,7 @@ a {
             border-bottom: #00adee solid 2px;
         }
 
-            .header .nav li.listen a:hover {
+            .header .nav li.listen a:hover, .header .nav li.listen a:active {
                 color: #fafafa;
                 background-color: #0099d3;
                 border-bottom: #0099d3 solid 2px;
