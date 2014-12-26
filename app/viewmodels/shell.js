@@ -1,10 +1,34 @@
 ﻿define(["plugins/router", "durandal/app"], function (router, app) {
+
+    var artist = ko.observable(),
+        title = ko.observable(),
+        showHeading = ko.observable(false),
+        nowPlaying = ko.computed(function () {
+            if (artist() || title())
+                return artist() + " - " + title();
+            else return "Not Available";
+        }),
+        loadData = function () {
+            $.ajax({
+                dataType: "jsonp",
+                url: "https://samweb.spacialaudio.com/webapi/station/65655/history?token=b5c9927a467f053c65911e3aad02b2af5ab1c933&top=1&format=json",
+                success: function (data) {
+                    artist(data[0].Artist);
+                    title(data[0].Title);
+                }
+            });
+        }
+
     return {
         router: router,
         activate: function () {
-            //router.on("router:navigation:complete", function () {
-            //    ga("send", { "hitType": "pageview", "page": this.activeInstruction().config.hash });
-            //});
+            router.on("router:navigation:complete", function () {
+                if (this.activeInstruction().config.hash === "#") {
+                    showHeading(true);
+                } else showHeading(false);
+
+                //ga("send", { "hitType": "pageview", "page": this.activeInstruction().config.hash });
+            });
 
             router.map([
                 { route: "", title: "Home", moduleId: "viewmodels/home", isListen: false, nav: true },
@@ -17,6 +41,11 @@
             ]).buildNavigationModel()
               .mapUnknownRoutes("viewmodels/404", "404")
               .activate();
-        }
+
+            loadData();
+            setInterval(function () { loadData() }, 10000);
+        },
+        showHeading: showHeading,
+        nowPlaying: nowPlaying
     };
 });
