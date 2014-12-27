@@ -1,7 +1,15 @@
 ﻿define(["plugins/router"], function (router) {
 
-    return {
+    var storeData = ko.observableArray(),
+        loadData = function () {
 
+        };
+
+    return {
+        activate: function () {
+            loadData();
+        },
+        storeData: storeData
     }
 
 });
