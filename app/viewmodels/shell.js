@@ -32,7 +32,7 @@
                 $("meta[property='og:title']").attr("content", document.title);
                 $("meta[property='og:url']").attr("content", location.toString());
 
-                //ga("send", { "hitType": "pageview", "page": this.activeInstruction().config.hash });
+                ga("send", { "hitType": "pageview", "page": this.activeInstruction().config.hash });
             });
 
             router.map([
