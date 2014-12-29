@@ -29,8 +29,8 @@
                 } else showHeading(false);
 
                 // Meta tag updates/replacements
-                $("meta[name='og:title']").attr("content", document.title);
-                $("meta[name='og:url']").attr("content", location.toString());
+                $("meta[property='og:title']").attr("content", document.title);
+                $("meta[property='og:url']").attr("content", location.toString());
 
                 //ga("send", { "hitType": "pageview", "page": this.activeInstruction().config.hash });
             });
