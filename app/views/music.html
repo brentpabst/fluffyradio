@@ -1,10 +1,22 @@
-﻿<div class="content">
-    <div class="container">
-        <h2>Coming Soon!</h2>
-        <div class="row">
-            <ul data-bind="foreach: musicData">
-                <li data-bind="text: Title"></li>
-            </ul>
-        </div>
-    </div>
+﻿<div class="row">
+    <h2>
+        Fluffy Library
+    </h2>
+    <p>
+        Check out the full Fluffy Music Library.  If you see it, we'll play it.  If you don't see it, <a href="http://www.facebook.com/fluffyradio">poke</a> or <a href="http://www.twitter.com/fluffy_radio">tweet</a> us to get it added!
+    </p>
+    <form class="form-search form-inline" data-bind="submit: loadData">
+        <input type="text" class="form-control input-lg search" data-bind="value: searchString, valueUpdate: 'afterkeydown'" placeholder="Search the library..." autofocus="autofocus" />
+        <button style="display: none;" type="submit">Fire ze missles!</button>
+    </form>
+    <ul class="music-library" data-bind="foreach: musicData">
+        <li>
+            <span class="artist" data-bind="text: Artist"></span>
+            <br />
+            <span class="title" data-bind="text: Title"></span>
+        </li>
+    </ul>
+    <br />
+    <br />
+    Want to see more? Try searching to narrow your results.
 </div>

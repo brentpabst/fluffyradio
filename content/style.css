@@ -256,3 +256,48 @@ a {
     #widget_now .info .title:last-child {
         display: none;
     }
+
+
+/* Search Stuff */
+form.form-search {
+    position: relative;
+}
+
+    form.form-search:before {
+        display: block;
+        width: 18px;
+        height: 18px;
+        content: "\e003";
+        font-family: 'Glyphicons Halflings';
+        font-size: 18px;
+        background-position: -48px 0;
+        position: absolute;
+        opacity: .5;
+        top: 8px;
+        left: 8px;
+        z-index: 1000;
+    }
+
+input.search {
+    padding-left: 35px;
+    min-width: 100%;
+}
+
+/* Library Stuff */
+ul.music-library {
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+    ul.music-library li {
+        padding: 5px 10px;
+    }
+
+        ul.music-library li:nth-child(even) {
+            background-color: #eee;
+        }
+
+    ul.music-library .artist {
+        font-weight: bold;
+    }
