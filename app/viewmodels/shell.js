@@ -17,6 +17,15 @@
                     title(data[0].Title);
                 }
             });
+        },
+        loadTweets = function () {
+            if (!document.getElementById("twitter-wjs")) {
+                var script = document.createElement("script"),
+                    firstScript = document.getElementsByTagName("script")[0];
+                script.id = "twitter-wjs";
+                script.src = "//platform.twitter.com/widgets.js";
+                firstScript.parentNode.insertBefore(script, firstScript);
+            }
         }
 
     return {
@@ -48,7 +57,10 @@
               .activate();
 
             loadData();
-            setInterval(function () { loadData() }, 10000);
+            setInterval(function () { loadData(); }, 10000);
+        },
+        compositionComplete: function () {
+            loadTweets();
         },
         showHeading: showHeading,
         nowPlaying: nowPlaying

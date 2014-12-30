@@ -85,7 +85,7 @@
         </div>
     </div>
 </div>
-<div class="content">
+<div class="content" data-bind="visible: !showHeading()">
     <div class="container" data-bind="router: {  }"></div>
 </div>
 <div class="footer">
@@ -100,18 +100,6 @@
                 </div>
                 <p>
                     <a class="twitter-timeline" href="https://twitter.com/search?q=%22fluffy%20radio%22" data-widget-id="547018738445606912" data-chrome="transparent noboarders nofooter noheader" data-tweet-limit="3" data-related="fluffy_radio" data-link-color="#00adee">Tweets about @fluffy_radio</a>
-                    <script type="text/javascript">
-                        !function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script>
-
                 </p>
             </div>
             <div class="col-md-3 info">
