@@ -301,3 +301,20 @@ ul.music-library {
     ul.music-library .artist {
         font-weight: bold;
     }
+
+
+    .players {
+        text-align: center;
+    }
+
+    .players i {
+        font-size: 10em;
+    }
+
+    .players a {
+        display: block;
+        margin: 20px 0;
+        padding: 10px 20px;
+        background-color: #00adee;
+        color: white;
+    }
