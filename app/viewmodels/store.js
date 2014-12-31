@@ -3,12 +3,11 @@
     var storeData = ko.observableArray(),
         loadData = function () {
             $.ajax({
-                url: "http://feed.zazzle.com/fluffy_radio/rss?callback=fluffer",
+                url: "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://fluffyradio.spreadshirt.com/shop/feed",
                 type: "GET",
                 dataType: "xml",
-                success: function(data) {
-                    alert(data);
-                    //toreData(data.item);
+                success: function(data.responseData.feed.entries) {
+                    storeData(data.item);
                 }
             });
         };
