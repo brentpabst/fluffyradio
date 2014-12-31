@@ -11,18 +11,32 @@
             </div>
             <div class="hidden-xs col-sm-8">
                 <ul class="nav nav-pills pull-right" role="navigation" data-bind="foreach: router.navigationModel">
+                    <!-- ko if: !isListen -->
                     <li data-bind="css: {active: isActive, listen: isListen }">
                         <a data-bind="attr: { href: hash }, html: title"></a>
                     </li>
+                    <!-- /ko -->
+                    <!-- ko if: isListen -->
+                    <li class="listen">
+                        <a href="http://www.streamlicensing.com/stations/fluffy"><i class="fa fa-headphones"></i>&nbsp;&nbsp;Listen Now</a>
+                    </li>
+                    <!-- /ko -->
                 </ul>
             </div>
         </div>
         <div class="row visible-xs">
             <div id="fluffmenu" class="collapse navbar-collapse">
                 <ul class="vertical-menu" data-bind="foreach: router.navigationModel">
+                    <!-- ko if: !isListen -->
                     <li data-bind="css: {active: isActive, listen: isListen }">
                         <a data-bind="attr: { href: hash }, html: title"></a>
                     </li>
+                    <!-- /ko -->
+                    <!-- ko if: isListen -->
+                    <li class="listen">
+                        <a href="http://www.streamlicensing.com/stations/fluffy"><i class="fa fa-headphones"></i>&nbsp;&nbsp;Listen Now</a>
+                    </li>
+                    <!-- /ko -->
                 </ul>
             </div>
         </div>

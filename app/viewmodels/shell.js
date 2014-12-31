@@ -56,7 +56,7 @@
                 { route: "", title: "Home", moduleId: "viewmodels/home", isListen: false, nav: true },
                 { route: "music", title: "Music", moduleId: "viewmodels/music", isListen: false, nav: true },
                 { route: "store", title: "Store", moduleId: "viewmodels/store", isListen: false, nav: false },
-                { route: "listen", title: "Listen Online", isListen: true, moduleId: "viewmodels/listen", nav: true },
+                { route: "listen", title: "Listen Online", moduleId: "viewmodels/listen", isListen: true, nav: true },
                 { route: "download", title: "Download", moduleId: "viewmodels/download", isListen: false, nav: false },
                 { route: "legal", title: "Legal Stuff", moduleId: "viewmodels/legal", isListen: false, nav: false },
                 //{ route: "contact", title: "Contact", moduleId: "viewmodels/contact", nav: true }
