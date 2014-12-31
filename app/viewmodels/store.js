@@ -18,5 +18,4 @@
         },
         storeData: storeData
     }
-
 });
