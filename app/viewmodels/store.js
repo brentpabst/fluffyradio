@@ -7,7 +7,6 @@
                 type: "GET",
                 dataType: "jsonp",
                 success: function(data) {
-                    alert(data.responseData.feed.entries);
                     storeData(data.responseData.feed.entries);
                 }
             });
