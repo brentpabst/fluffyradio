@@ -32,6 +32,14 @@
         router: router,
         activate: function () {
             router.on("router:navigation:complete", function () {
+                // Check for iframe (we expect this from stream licensing
+                if (this.activeInstruction().config.hash !== "#/listen") {
+                    // break the frame
+                    if (top.location !== self.location) {
+                        top.location = self.location.href;
+                    }
+                }
+
                 // Home page heading
                 if (this.activeInstruction().config.hash === "#") {
                     showHeading(true);
