@@ -1,0 +1,12 @@
+<asx version = "3.0">
+	<Title>Fluffy Radio</Title>
+	<Author>http://www.fluffyradio.com</Author>
+	<Copyright>Fluffy Radio</Copyright>
+	<MoreInfo href="http://www.fluffyradio.com" />
+
+	<entry>
+		<ref href="http://listen.spacial.com/api/listen/?sid=65655&method=sc&rid=1186040" />
+		<Title>Fluffy Radio</Title> 
+		<Author>http://www.fluffyradio.com</Author>
+	</entry>
+</asx>
