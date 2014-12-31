@@ -65,7 +65,7 @@
               .activate();
 
             loadData();
-            setInterval(function () { loadData(); }, 10000);
+            setInterval(function () { loadData(); }, 30000);
         },
         compositionComplete: function () {
             loadTweets();
