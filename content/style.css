@@ -184,7 +184,7 @@ a {
         }
 
 .content {
-    padding: 40px 15px;
+    padding: 20px 15px;
     background-color: white;
 }
 
@@ -303,18 +303,24 @@ ul.music-library {
     }
 
 
-    .players {
-        text-align: center;
-    }
+.players {
+    text-align: center;
+}
 
     .players i {
         font-size: 10em;
     }
 
     .players a {
-        display: block;
+        display: inline-block;
         margin: 20px 0;
         padding: 10px 20px;
         background-color: #00adee;
         color: white;
+        font-size: 18px;
     }
+
+        .players a:hover {
+            background-color: #0099d3;
+            transition: all 0.3s ease-in-out;
+        }
