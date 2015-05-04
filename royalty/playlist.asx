@@ -5,7 +5,7 @@
 	<MoreInfo href="http://www.fluffyradio.com" />
 
 	<entry>
-		<ref href="http://listen.spacial.com/api/listen/?sid=65655&method=sc&rid=1186040" />
+		<ref href="http://50.7.99.155:7543/stream" />
 		<Title>Fluffy Radio</Title> 
 		<Author>http://www.fluffyradio.com</Author>
 	</entry>
