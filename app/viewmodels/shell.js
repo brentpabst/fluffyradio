@@ -11,7 +11,8 @@
         loadData = function () {
             $.ajax({
                 dataType: "jsonp",
-                url: "https://samweb.spacialaudio.com/webapi/station/65655/history?token=b5c9927a467f053c65911e3aad02b2af5ab1c933&top=1&format=json",
+                url: "http://widgets-proxy.cloudapp.net/webapi/station/65655/history?token=b5c9927a467f053c65911e3aad02b2af5ab1c933&top=1&format=json",
+                async: true,
                 success: function (data) {
                     artist(data[0].Artist);
                     title(data[0].Title);

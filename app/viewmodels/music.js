@@ -6,11 +6,12 @@
         rowCount = ko.observable(20),
         loadData = function () {
             // Build the url
-            var url = "https://samweb.spacialaudio.com/webapi/station/65655/library?token=b5c9927a467f053c65911e3aad02b2af5ab1c933&top=" + rowCount() + "&start=" + currentPage() + "&search=" + searchString() + "&format=json";
+            var url = "http://widgets-proxy.cloudapp.net/webapi/station/65655/library?token=b5c9927a467f053c65911e3aad02b2af5ab1c933&top=" + rowCount() + "&start=" + currentPage() + "&search=" + searchString() + "&format=json";
 
             $.ajax({
                 dataType: "jsonp",
                 url: url,
+                async: true,
                 success: function (data) {
                     musicData(data);
                 }
