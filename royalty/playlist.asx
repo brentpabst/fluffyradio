@@ -5,7 +5,7 @@
 	<MoreInfo href="http://www.fluffyradio.com" />
 
 	<entry>
-		<ref href="http://50.7.99.155:7543/stream" />
+		<ref href="http://stream.fluffyradio.com/stream" />
 		<Title>Fluffy Radio</Title> 
 		<Author>http://www.fluffyradio.com</Author>
 	</entry>
