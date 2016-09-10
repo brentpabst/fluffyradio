@@ -16,6 +16,11 @@
                         <a data-bind="attr: { href: hash }, html: title"></a>
                     </li>
                     <!-- /ko -->
+                    <!-- ko if: isStore -->
+                    <li>
+                        <a href="http://store.fluffyradio.com">Store</a>
+                    </li>
+                    <!-- /ko -->
                     <!-- ko if: isListen -->
                     <li class="listen">
                         <a href="http://www.streamlicensing.com/stations/fluffy/index.html"><i class="fa fa-headphones"></i>&nbsp;&nbsp;Listen Now</a>
