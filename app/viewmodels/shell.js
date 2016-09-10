@@ -54,12 +54,12 @@
             });
 
             router.map([
-                { route: "", title: "Home", moduleId: "viewmodels/home", isListen: false, nav: true },
-                { route: "music", title: "Music", moduleId: "viewmodels/music", isListen: false, nav: true },
-                { route: "store", title: "Store", moduleId: "viewmodels/store", isListen: false, nav: true },
-                { route: "listen", title: "Listen Online", moduleId: "viewmodels/listen", isListen: true, nav: true },
-                { route: "download", title: "Download", moduleId: "viewmodels/download", isListen: false, nav: false },
-                { route: "legal", title: "Legal Stuff", moduleId: "viewmodels/legal", isListen: false, nav: false },
+                { route: "", title: "Home", moduleId: "viewmodels/home", isListen: false, isStore: false, nav: true },
+                { route: "music", title: "Music", moduleId: "viewmodels/music", isListen: false, isStore: false, nav: true },
+                { route: "store", title: "Store", moduleId: "viewmodels/store", isListen: false, isStore: true, nav: true },
+                { route: "listen", title: "Listen Online", moduleId: "viewmodels/listen", isListen: true, isStore: false, nav: true },
+                { route: "download", title: "Download", moduleId: "viewmodels/download", isListen: false, isStore: false, nav: false },
+                { route: "legal", title: "Legal Stuff", moduleId: "viewmodels/legal", isListen: false, isStore: false, nav: false },
                 //{ route: "contact", title: "Contact", moduleId: "viewmodels/contact", nav: true }
             ]).buildNavigationModel()
               .mapUnknownRoutes("viewmodels/404", "404")
