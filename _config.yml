@@ -13,16 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
+title: Fluffy Radio
+email: hello@fluffyradio.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Playing the music you want to hear, Fluffy Radio, packs all of the hits.  In short, we play anything and everything... Pure Fluff.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://www.fluffyradio.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: fluffy_radio
+github_username:  fluffyradio
+google_analytics: UA-41168228-5
 
 # Build settings
 markdown: kramdown
@@ -35,3 +34,11 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+# Navigation List
+navigation:
+  - title: Home
+    url: /
+  - title: Music
+    url: /music/
+  - title: Swag
+    url: https://store.fluffyradio.com

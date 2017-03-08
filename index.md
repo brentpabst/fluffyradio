@@ -1,21 +1,44 @@
 ---
 layout: default
+title: Home
 ---
 
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
-      </div>
+<div class="carousel carousel-slider">
+  <div class="carousel-item">
+    <div class="container">
+    <h3>
+      <i>Anything and</i>
+      <br />
+      <i>everything...</i>
+      <br />
+      <i>#PureFluff</i>
+    </h3>
+    <br />
+    <h5>
+      <i>We've got your favorites!</i>
+      <br />
+      <i>If you don't hear it...</i>
+      <br />
+      <i>We'll add it</i>
+    </h5>
     </div>
-    <div class="parallax"><img src="assets/img/bg.jpg" alt="Unsplashed background img 1"></div>
   </div>
+</div>
+
+<div class="container row">
+  <div class="col s1 l8">
+    <h3>We've got apps for that...</h3>
+    <p>Tune in wherever you are. We've got apps for all smartphones, tablets, and even entertainment and game consoles or go old school and launch the stream right in your web browser.</p>
+  </div>
+  <div class="col s1 l4 right-align">
+    <a href="/download/" class="waves-effect waves-light light-blue lighten-2 btn-large"><i class="material-icons left">cloud</i>Download Now</a>
+  </div>
+</div>
+
+<script>
+  (function ($) {
+    $(function () {
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+    }); // end of document ready
+  })(jQuery); // end of jQuery name space
+</script>

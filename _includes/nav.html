@@ -1,0 +1,36 @@
+<header>
+  <nav class="white">
+    <div class="nav-wrapper container">
+      <a href="{{ " / " | relative_url}}" class="brand-logo">
+        <img src="assets/img/fluffy-radio.png" alt="Fluffy Radio Logo" />
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+      {% for node in site.navigation %}
+        {% if node.title %}
+          {% if page.url == node.url %}
+          <li class="active"><a class="waves-effect waves-blue" href="{{ node.url }}"> {{ node.title | upcase }}</a></li>
+          {% else %}
+          <li><a class="waves-effect waves-blue" href="{{ node.url }}"> {{ node.title | upcase }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+        <li><a href="http://www.streamlicensing.com/stations/fluffy/index.html" class="waves-effect waves-light light-blue lighten-2 btn"><i class="material-icons left">headset</i>LISTEN NOW</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+      {% for node in site.navigation %}
+        {% if node.title %}
+          {% if page.url == node.url %}
+          <li class="active"><a class="waves-effect waves-blue" href="{{ node.url }}">{{ node.title }}</a></li>
+          {% else %}
+          <li><a class="waves-effect waves-blue" href="{{ node.url }}">{{ node.title }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+        <li><a href="http://www.streamlicensing.com/stations/fluffy/index.html"><i class="material-icons right">headset</i>Listen Now</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons light-blue-text text-lighten-2">menu</i></a>
+    </div>
+  </nav>
+</header>
