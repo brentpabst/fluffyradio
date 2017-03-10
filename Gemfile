@@ -21,6 +21,9 @@ gem "jekyll", "3.4.1"
 # Add material awesomeness
 gem "materialize-sass", "0.98.0"
 
+# Add font-awesomeness
+gem "font-awesome-sass"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"

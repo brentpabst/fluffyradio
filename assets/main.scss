@@ -1,9 +1,14 @@
 ---
 # Front Matter for Jekyll pickup
 ---
+@charset "utf-8";
+
+// Fonts
+$fa-font-path: "/fonts/font-awesome/";
 
 // Imports
 @import "materialize";
+@import "font-awesome";
 
 // Materialize Overrides
 .waves-effect.waves-blue .waves-ripple {
@@ -15,6 +20,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  color: #1c3b4f;
 }
 
 main {
@@ -44,6 +50,10 @@ nav {
   }
 }
 
+.social a {
+  padding-right: .5rem;
+}
+
 .carousel-item {
   background-image: url("/assets/img/bg.jpg");
 
@@ -71,6 +81,15 @@ nav {
       font-style: normal;
     }
   }
+}
+
+.padding {
+  margin: 3rem 0;
+}
+
+.large-icon {
+  font-size: 8rem;
+  margin: 1rem;
 }
 
 @media #{$small-and-down} {

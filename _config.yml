@@ -31,6 +31,7 @@ sass:
 gems:
   - jekyll-feed
   - materialize-sass
+  - font-awesome-sass
 exclude:
   - Gemfile
   - Gemfile.lock
