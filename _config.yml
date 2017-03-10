@@ -28,7 +28,6 @@ sass:
   style: compressed
 gems:
   - github-pages
-  - font-awesome-sass
 exclude:
   - Gemfile
   - Gemfile.lock
