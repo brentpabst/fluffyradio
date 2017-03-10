@@ -3,12 +3,6 @@
 ---
 @charset "utf-8";
 
-// Fonts
-$fa-font-path: "/fonts/font-awesome/";
-
-// Imports
-@import "font-awesome";
-
 // Materialize Overrides
 .waves-effect.waves-blue .waves-ripple {
   background-color: rgba(79, 195, 247, 0.65);
