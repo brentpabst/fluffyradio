@@ -7,7 +7,6 @@
 $fa-font-path: "/fonts/font-awesome/";
 
 // Imports
-@import "materialize";
 @import "font-awesome";
 
 // Materialize Overrides
@@ -92,7 +91,7 @@ nav {
   margin: 1rem;
 }
 
-@media #{$small-and-down} {
+@media (max-width: 600px) {
   nav {
     .brand-logo {
       img {

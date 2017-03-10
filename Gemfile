@@ -15,9 +15,6 @@ ruby RUBY_VERSION
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
-# Add material awesomeness
-gem "materialize-sass", group: :jekyll_plugins
-
 # Add font-awesomeness
 gem "font-awesome-sass", group: :jekyll_plugins
 
