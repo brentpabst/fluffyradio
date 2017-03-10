@@ -162,8 +162,6 @@ GEM
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
-    materialize-sass (0.98.0)
-      sass (~> 3.3)
     mercenary (0.3.6)
     mini_portile2 (2.1.0)
     minima (2.0.0)
@@ -201,7 +199,6 @@ PLATFORMS
 DEPENDENCIES
   font-awesome-sass
   github-pages
-  materialize-sass
   tzinfo-data
 
 RUBY VERSION
