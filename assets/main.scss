@@ -1,0 +1,103 @@
+---
+# Front Matter for Jekyll pickup
+---
+@charset "utf-8";
+
+// Fonts
+$fa-font-path: "/fonts/font-awesome/";
+
+// Imports
+@import "materialize";
+@import "font-awesome";
+
+// Materialize Overrides
+.waves-effect.waves-blue .waves-ripple {
+  background-color: rgba(79, 195, 247, 0.65);
+}
+
+// Custom Styles
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #1c3b4f;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+nav {
+  .brand-logo {
+    color: #444;
+    img {
+      max-height: 64px;
+    }
+  }
+
+  ul {
+    a {
+      color: #444;
+    }
+  }
+}
+
+.social a {
+  padding-right: .5rem;
+}
+
+.carousel-item {
+  background-image: url("/assets/img/bg.jpg");
+
+  h3 {
+    line-height: 3.75rem;
+    text-transform: uppercase;
+
+    i {
+      color: white;
+      padding: 0 5px;
+      background-color: #00adee;
+      background-color: rgba(0, 173, 238, 0.70);
+      font-style: normal;
+    }
+  }
+
+  h5 {
+    line-height: 2.25rem;
+
+    i {
+      color: white;
+      padding: 0 5px;
+      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-style: normal;
+    }
+  }
+}
+
+.padding {
+  margin: 3rem 0;
+}
+
+.large-icon {
+  font-size: 8rem;
+  margin: 1rem;
+}
+
+@media #{$small-and-down} {
+  nav {
+    .brand-logo {
+      img {
+        max-height: 54px;
+      }
+    }
+  }
+}
