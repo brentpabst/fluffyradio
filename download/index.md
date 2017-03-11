@@ -8,8 +8,8 @@ title: Downloads
   <h5>We're with you regardless of where you are or what you use!</h5>
   <div class="row center">
     <div class="col s12 l3">
-      <p class="large-icon"><i class="fa fa-chrome"></i></p>
-      <a href="http://www.streamlicensing.com/stations/fluffy/index.html" class="waves-effect waves-light light-blue lighten-2 btn-large">Web Player</a>
+      <p class="large-icon"><i class="fa fa-play-circle-o"></i></p>
+      <a href="http://www.streamlicensing.com/stations/fluffy/index.html" class="waves-effect waves-light light-blue lighten-2 btn-large">Listen Now!</a>
     </div>
     <div class="col s12 l3">
       <p class="large-icon"><i class="fa fa-android"></i></p>
